@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="NyaudeE Business Centre - Products, business ideas and practical entrepreneurship opportunities in Malawi.">
+<title>NyaudeE Business Centre</title>
+<style>
+:root{--green:#087f5b;--dark:#12372a;--gold:#f4b942;--cream:#f7fbf8;--white:#fff;--text:#23352e;--muted:#66756e}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--cream);line-height:1.6}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:20;background:#ffffffee;backdrop-filter:blur(10px);border-bottom:1px solid #e5eee9}
+.nav{max-width:1120px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-weight:800;font-size:1.2rem;color:var(--dark)}
+.logo span{color:var(--green)}
+nav{display:flex;gap:22px;font-weight:600;font-size:.94rem}
+nav a:hover{color:var(--green)}
+.menu{display:none;background:none;border:0;font-size:1.5rem}
+.hero{background:linear-gradient(135deg,#073d2c,#0b8b63);color:white}
+.hero-inner{max-width:1120px;margin:auto;padding:82px 20px 76px;display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center}
+.badge{display:inline-block;background:#ffffff18;border:1px solid #ffffff3a;padding:7px 13px;border-radius:30px;font-size:.85rem;margin-bottom:18px}
+h1{font-size:clamp(2.3rem,6vw,4.7rem);line-height:1.02;margin-bottom:20px}
+.hero p{font-size:1.08rem;max-width:620px;color:#e7f7f0}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:12px 18px;border-radius:9px;font-weight:700}
+.btn-primary{background:var(--gold);color:#1c291f}
+.btn-light{border:1px solid #ffffff55;color:#fff}
+.hero-card{background:#ffffff12;border:1px solid #ffffff30;border-radius:24px;padding:30px;box-shadow:0 20px 50px #00150d30}
+.hero-card .big{font-size:4rem}
+.hero-card h3{font-size:1.5rem;margin:5px 0}
+section{padding:70px 20px}
+.container{max-width:1120px;margin:auto}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:30px}
+.section-head h2{font-size:2rem;color:var(--dark)}
+.section-head p{color:var(--muted);max-width:600px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;border:1px solid #e5eee9;border-radius:16px;padding:24px;box-shadow:0 8px 24px #15392b0b}
+.card .icon{font-size:2rem;margin-bottom:10px}
+.card h3{margin-bottom:7px;color:var(--dark)}
+.card p{color:var(--muted)}
+.product-image{height:180px;border-radius:12px;background:linear-gradient(135deg,#dff4eb,#f8df9d);display:flex;align-items:center;justify-content:center;font-size:3.5rem;margin-bottom:16px}.product-photo{width:100%;height:230px;object-fit:cover;border-radius:12px;margin-bottom:16px;display:block}
+.price{font-weight:800;color:var(--green);margin:12px 0}
+.idea{border-left:5px solid var(--gold)}
+.booster{background:var(--dark);color:white}
+.booster .section-head h2{color:white}
+.booster .section-head p{color:#cfe4db}
+.booster .card{background:#ffffff0d;border-color:#ffffff20;color:white}
+.booster .card h3{color:white}
+.booster .card p{color:#cfe4db}
+.contact{background:#e9f5ef}
+.contact-box{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.contact-info{display:grid;gap:12px;margin-top:20px}
+.contact-item{background:white;padding:14px 16px;border-radius:10px}
+footer{background:#082d21;color:#d6e9e1;padding:30px 20px}
+.footer-inner{max-width:1120px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.small{font-size:.9rem;color:#aac7bc}
+@media(max-width:760px){
+nav{display:none;position:absolute;top:62px;left:0;right:0;background:white;padding:18px 20px;flex-direction:column;box-shadow:0 8px 20px #00000012}
+nav.open{display:flex}.menu{display:block}
+.hero-inner{grid-template-columns:1fr;padding-top:60px}
+.grid,.contact-box{grid-template-columns:1fr}
+section{padding:52px 18px}
+.section-head{display:block}
+.section-head p{margin-top:8px}
+h1{font-size:3rem}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="nav">
+<a class="logo" href="#home">NyaudeE <span>Business Centre</span></a>
+<button class="menu" aria-label="Open menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+<nav>
+<a href="#home">Home</a><a href="#products">Products</a><a href="#ideas">Business Ideas</a><a href="#booster">Business Booster 30</a><a href="#follow">Follow Us</a><a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="hero-inner">
+<div>
+<span class="badge">🇲🇼 Malawi Business Hub</span>
+<h1>Products, ideas & opportunities.</h1>
+<p>Welcome to NyaudeE Business Centre, a platform for discovering products and practical business ideas that can help people start, grow and manage businesses.</p>
+<div class="buttons">
+<a class="btn btn-primary" href="#products">🛍️ Explore Products</a>
+<a class="btn btn-light" href="#ideas">💡 Business Ideas</a>
+</div>
+</div>
+<div class="hero-card">
+<div class="big">🚀</div>
+<h3>Build. Sell. Grow.</h3>
+<p>Discover products, explore business opportunities and learn practical entrepreneurship skills.</p>
+</div>
+</div>
+</section>
+
+<section id="products">
+<div class="container">
+<div class="section-head"><div><h2>🛍️ Featured Products</h2><p>Browse products available through NyaudeE Business Centre. Product names, prices and photos can be updated as your catalogue grows.</p></div></div>
+<div class="grid">
+<article class="card"><img class="product-photo" src="images/white-sneakers.png" alt="White sneakers available at NyaudeE Business Centre"><h3>White Sneakers 👟</h3><p>Clean white sneakers suitable for everyday wear. Contact us to confirm available sizes and stock.</p><div class="price">MWK 55,000</div><a class="btn btn-primary" href="https://wa.me/265991478141?text=Hello%20NyaudeE%20Business%20Centre%2C%20I%27m%20interested%20in%20the%20white%20sneakers%20priced%20at%20MWK%2055%2C000." target="_blank">Order / Enquire</a></article>
+<article class="card"><div class="product-image">👕</div><h3>Clothes 👕</h3><p>Find clothing options available from NyaudeE Business Centre.</p><div class="price">Contact for price</div><a class="btn btn-primary" href="https://wa.me/265991478141?text=Hello%20NyaudeE%20Business%20Centre%2C%20I%27m%20interested%20in%20clothes." target="_blank">Order / Enquire</a></article>
+<article class="card"><div class="product-image">⭐</div><h3>New Arrivals</h3><p>New shoes and clothes will be featured here as stock is added.</p><div class="price">Ask for latest stock</div><a class="btn btn-primary" href="https://wa.me/265991478141?text=Hello%20NyaudeE%20Business%20Centre%2C%20please%20send%20me%20your%20latest%20stock." target="_blank">See Latest Stock</a></article>
+</div>
+</div>
+</section>
+
+<section class="booster" id="booster">
+<div class="container">
+<div class="section-head"><div><h2>🚀 Business Booster 30</h2><p>A 30-day practical business guidance program designed to help business owners understand their challenges, improve their operations and work toward growth.</p></div></div>
+<div class="grid">
+<article class="card"><div class="icon">📊</div><h3>Business Analysis</h3><p>We look at your business, identify key challenges and help you understand where improvement is needed.</p></article>
+<article class="card"><div class="icon">💡</div><h3>Practical Guidance</h3><p>Receive practical business tips and strategies based on your business situation and goals.</p></article>
+<article class="card"><div class="icon">📈</div><h3>30-Day Progress</h3><p>Get guidance and monitoring throughout the 30-day program as you work on improving your business.</p></article>
+</div>
+<div class="buttons" style="margin-top:30px">
+<a class="btn btn-primary" href="https://wa.me/265991478141?text=Hello%20NyaudeE%20Business%20Centre%2C%20I%27m%20interested%20in%20Business%20Booster%2030.%20Please%20send%20me%20the%20joining%20details." target="_blank">📲 Join Business Booster 30</a>
+</div>
+<div class="card" style="margin-top:28px;max-width:760px">
+<h3>💰 Program Details</h3>
+<p><strong>Subscription:</strong> MWK 10,000</p>
+<p><strong>Payment name:</strong> Hilda Banda</p>
+<p><strong>After payment:</strong> Send your payment confirmation screenshot to <strong>0991478141</strong>. After verification, you will receive the joining steps.</p>
+</div>
+</div>
+</section>
+
+<section class="social" id="follow">
+<div class="container">
+<div class="section-head"><div><h2>💡 Looking for Business Ideas?</h2><p>Stay connected with NyaudeE Business Centre for practical business ideas, opportunities, tips and updates. Follow our Facebook page and WhatsApp Channel so you do not miss new business content.</p></div></div>
+<div class="buttons">
+<a class="btn btn-primary" href="https://www.facebook.com/share/1FfSyo4Ppt/" target="_blank" rel="noopener">📘 Follow us on Facebook</a>
+<a class="btn btn-light" href="https://whatsapp.com/channel/0029VbDEzTODJ6H7t8dAyS1A" target="_blank" rel="noopener">📱 Follow our WhatsApp Channel</a>
+</div>
+<div class="card" style="margin-top:28px;max-width:760px">
+<h3>🚀 Want business ideas?</h3>
+<p>Follow our Facebook page and WhatsApp Channel for business ideas you can explore with different levels of starting capital, plus practical advice for starting, managing and growing a business.</p>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="footer-inner">
+<div><strong>NyaudeE Business Centre</strong><br><span class="small">Products • Business Ideas • Opportunities</span></div>
+<div class="small">© 2026 NyaudeE Business Centre. All rights reserved.</div>
+</div>
+</footer>
+<script>
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('open')));
+</script>
+</body>
+</html>
